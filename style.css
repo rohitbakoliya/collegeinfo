@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/**this is for container-1**/
+.container-1 {
+  background-image: url("images/coffee.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  /*background-image: linear-gradient(to right, #868f96 0%, #596164 100%);*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.hr {
+  border: 1px solid rgb(231, 231, 231);
+}
+.logo {
+  color: rgb(84, 235, 184);
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+}
+.nav-links {
+  display: flex;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 40%;
+  justify-content: space-between;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  margin: 15px;
+  text-decoration: none;
+  padding: 0px 10px;
+  color: rgb(84, 235, 184);
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: rgb(231, 73, 73);
+  letter-spacing: 2px;
+}
+.active {
+  letter-spacing: 2px;
+  font-weight: bolder;
+  border-width: 3px;
+  color: red;
+  text-shadow: 0 0 3px black;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgb(255, 35, 35), rgba(27, 2, 2, 0))
+    0 1%;
+}
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-bar input[type="search"] {
+  padding: 10px 30px;
+  outline: none;
+  width: 30vw;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(84, 235, 184);
+  border-radius: 25px;
+  /* border-image: linear-gradient(45deg, rgb(84, 235, 184) 0%, #38f841 100%);
+  border-image-slice: 1; */
+  border-width: 3px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+/* .search-bar input[type="search"]::after {
+  border-radius: 25px;
+} */
+.search-bar input[type="search"]:focus {
+  width: 35vw;
+  color: black;
+  /* background-color: rgb(48, 48, 48); */
+}
+.search-bar input[type="submit"] {
+  padding: 10px 50px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border: 3px solid rgb(84, 235, 184);
+  border-radius: 25px;
+  outline: none;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s all;
+  margin: 10px;
+}
+::placeholder {
+  color: #444;
+  line-height: 10px;
+}
+::-webkit-search-cancel-button {
+  cursor: pointer;
+  right: 10px;
+  font-size: 20px;
+}
+.search-bar input[type="submit"]:hover {
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  color: black;
+  letter-spacing: 2px;
+}
+/**this is for container-2**/
+.container-2 {
+  height: 90vh;
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+  background-blend-mode: color-dodge;
+}
+/**this is for container-3**/
+.container-3 {
+  background-image: url("images/lappi.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
